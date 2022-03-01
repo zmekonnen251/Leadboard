@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 700px;
+  margin: 50px auto;
+  padding: 2rem;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  gap: 50px;
+  margin-top: 30px;
+  padding-left: 50px;
+}
+
+.name-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+li {
+  padding: 1px 6px;
+  padding-left: 5px;
+  line-height: 1.5rem;
+}
+
+ul {
+  border: 1px solid black;
+  list-style: none;
+}
+
+li:nth-child(2n) {
+  background-color: #c2c2c2;
+}
+
+.add-score {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.name-list--header {
+  display: flex;
+  gap: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  padding: 2px;
+  border: 2px solid black;
+}
+
+button {
+  width: fit-content;
+  box-shadow: 2px 2px 2px 2px black;
+  font-weight: bold;
+  cursor: pointer;
+}
