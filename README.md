@@ -12,6 +12,26 @@
 - Frameworks : `Webpack`
 - Technologies used: `GitHub`
 
+### Setup
+- Open your command prompt or terminal and run.
+- [Clone the GitHub Repository](https://github.com/zmekonnen251/Leadboard.git)
+- run this commands in your terminal:
+     - `npm install`
+     - `npm run build`
+     - `npm start`
+
+### Usage
+- after running `npm start` the website will be opened automatically on your default browser.
+
+### Run tests
+
+- To run tests run : npm run test
+- npx hint .
+- npx stylelint "**/*.{css,scss}"
+
+### Deployment
+
+- Project is deployed using netlify
 
 ## Author
 
