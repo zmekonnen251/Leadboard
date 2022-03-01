@@ -28,6 +28,12 @@ main {
   gap: 1rem;
 }
 
+li {
+  padding: 1px 6px;
+  padding-left: 5px;
+  line-height: 1.5rem;
+}
+
 ul {
   border: 1px solid black;
   list-style: none;
@@ -35,11 +41,6 @@ ul {
 
 li:nth-child(2n) {
   background-color: #c2c2c2;
-}
-li {
-  padding-left: 5px;
-  line-height: 1.5rem;
-  padding: 1px 6px;
 }
 
 .add-score {
@@ -65,12 +66,10 @@ input {
   padding: 2px;
   border: 2px solid black;
 }
+
 button {
   width: fit-content;
   box-shadow: 2px 2px 2px 2px black;
   font-weight: bold;
-}
-
-button {
   cursor: pointer;
 }
