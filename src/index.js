@@ -12,20 +12,21 @@ addScoreBtn.onclick = async (e) => {
   e.preventDefault();
   const userName = document.querySelector('.name').value;
   const userScore = document.querySelector('.score').value;
+  if (userName !== '' && userScore !== '') {
+    await fetch(urlWithId, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        user: userName,
+        score: userScore,
+      }),
+    })
+      .then((result) => result.json())
+      .then((response) => response);
 
-  await fetch(urlWithId, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      user: userName,
-      score: userScore,
-    }),
-  })
-    .then((result) => result.json())
-    .then((response) => response);
-
-  document.querySelector('.name').value = '';
-  document.querySelector('.score').value = '';
+    document.querySelector('.name').value = '';
+    document.querySelector('.score').value = '';
+  }
 };
 
 const getScore = async () => {
