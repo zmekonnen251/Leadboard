@@ -9,7 +9,8 @@ body {
   display: flex;
   flex-direction: column;
   border: 1px solid black;
-  width: 700px;
+  box-shadow: 0 0 5px 5px #525252;
+  width: 40rem;
   margin: 50px auto;
   padding: 2rem;
   font-weight: bold;
