@@ -6,14 +6,13 @@ const refreshBtn = document.querySelector('.refresh');
 const loadingText = document.querySelector('.loading');
 
 // const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
-const urlWithId =
-  'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/K2w3YZM4MqdQ5Mz1JwCS/scores/';
+const urlWithId = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/K2w3YZM4MqdQ5Mz1JwCS/scores/';
 
 addScoreBtn.onclick = async (e) => {
   e.preventDefault();
   const userName = document.querySelector('.name').value;
   const userScore = document.querySelector('.score').value;
-  if (userName !== '' && userScore != '') {
+  if (userName !== '' && userScore !== '') {
     await fetch(urlWithId, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
